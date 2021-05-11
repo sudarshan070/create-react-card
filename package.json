@@ -1,20 +1,35 @@
 {
   "name": "create-react-card",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A cli for creating react boilerplate",
+  "main": "src/cli.js",
+  "bin": {
+    "create-react-card": "bin/create-react-card"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/cli.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sudarshan070/create-react-card.git"
   },
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "react",
+    "webpack",
+    "create-react-card"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sudarshan070/create-react-card/issues"
   },
-  "homepage": "https://github.com/sudarshan070/create-react-card#readme"
+  "homepage": "https://github.com/sudarshan070/create-react-card#readme",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
 }
