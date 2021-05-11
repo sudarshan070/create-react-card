@@ -1,6 +1,6 @@
 import arg from 'arg';
 import inquirer from 'inquirer'
-// import templateName from './templateName';
+import templateName from './templateName';
 import { createProject } from './main';
 
 function parseArgumentsIntoOptions(rawArgs) {
@@ -41,7 +41,7 @@ async function promptForMissingOptions(options) {
             type: 'list',
             name: 'template',
             message: 'Please choose your boilerplate',
-            choices: ['React', "React-Node"],
+            choices: [...templateName],
             default: defaultTemplate
         })
     }
@@ -67,6 +67,4 @@ export async function cli(args) {
     let options = parseArgumentsIntoOptions(args)
     options = await promptForMissingOptions(options)
     await createProject(options)
-    // console.log(options);
-
 }
