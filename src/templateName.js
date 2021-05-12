@@ -1,6 +1,6 @@
 const templateName = [
     "React",
-    "React + Node"
+    "React-Node"
 ]
 
 module.exports = templateName
