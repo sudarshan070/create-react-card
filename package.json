@@ -1,6 +1,6 @@
 {
   "name": "create-react-card",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A cli for creating react boilerplate",
   "main": "src/cli.js",
   "bin": {
@@ -11,7 +11,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./bin/cli.js"
+    "start": "node ./bin/cli.js",
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,8 @@
     "webpack",
     "create-react-card"
   ],
-  "author": "",
-  "license": "ISC",
+  "author": "Sudarshan Shinde",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sudarshan070/create-react-card/issues"
   },
